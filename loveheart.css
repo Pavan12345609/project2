@@ -1,0 +1,237 @@
+/* Use normal text (sans-serif) */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right, rgb(7, 7, 7), rgb(12, 12, 12));
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Main Content */
+#mainDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Love Heart Container */
+#loveHeart {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Background Fireworks */
+#fireworks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Keep it behind content */
+    pointer-events: none;
+}
+
+/* Neon Glowing Border Around Content */
+#words {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    z-index: 2;
+    margin: 0;
+    padding: 20px;
+    border: 3px solid #ff00ff; /* Neon Pink Border */
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff; /* Glowing Effect */
+    border-radius: 10px;
+}
+
+/* Countdown Timer */
+#elapseClock {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style for the given text */
+.box1 {
+    margin: 0; /* Remove space around the text block */
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+/* REMOVE SPACE ABOVE "I LOVE YOU" */
+#loveu {
+    margin: 0 !important;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Remove extra space between paragraphs */
+.box1 p, #loveu p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Signature (your name) */
+.signature {
+    font-size: 14px;
+    margin-top: 0px;
+    opacity: 0.85;
+}
+
+/* Make ALL links look like normal text */
+a, a:visited, a:hover, a:active {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-weight: normal !important;
+}
+
+/* Animated Heart */
+.animated-heart {
+    animation: heartbeat 1s infinite;
+}
+
+/* Heartbeat Animation */
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+/* Enable Scrolling */
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    background-color: rgb(50, 41, 41); /* Keep the black background */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow-y: auto; /* Enables vertical scrolling */
+    height: auto;
+    min-height: 100vh;
+}
+
+/* Main Content - Allow Scrolling */
+#mainDiv {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto; /* Center the content */
+    padding: 20px;
+    padding-top: 20px;
+}
+#code {
+    float: left;
+    width: 440px;
+    margin-top: 100px !important;
+    height: 400px;
+    color: #d8d8d8;
+    font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
+    font-size: 13px;
+}
+
+#code .string {
+    /* color: #ffb500; */
+}
+
+#code .keyword {
+    /* color: #b91db2; */
+    font-weight: bold;
+}
+
+#code .placeholder {
+    margin-left: 13px
+}
+
+#code .space {
+    margin-left: 7px
+}
+
+#code .comments {
+    /* color: #cac9c9e0; */
+}
+.oclr  a{
+    color: #d8d8d8;
+
+}
+
+a {
+    color: #b0739b;
+    text-decoration: seashell;
+}
+.comments { color: #58f70f; }
+.string { color: #ce9178; }
+.keyword { color: #569cd6; }
+.placeholder { padding-left: 20px; }
+
+#copyright {
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+    color: #eae5e5
+}
+
+#errorMsg {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    top: 100px;
+    left: 0
+}
+
+#copyright a {
+    color: #f2f2f2
+}
+
+
+/* Neon Box Content */
+#words {
+    background: linear-gradient(
+        45deg,
+        #FF0000,#ff7300,#fffb00,#48ff00
+        #00ffd5,#002bff,#ff00c8,#FF0000
+    );
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    color: rgb(247, 222, 222);
+    margin: 0 auto; /* Center it */
+    border: 3px solid #ff7300; /* Neon Pink Border */
+    box-shadow: 0 0 15px rgba(99, 170, 0, 0.667), 0 0 30px #ff0000; /* Glowing Effect */
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    #mainDiv {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    #words {
+        width: 100%;
+        padding: 15px;
+    }
+}
